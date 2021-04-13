@@ -122,6 +122,22 @@ body {
     -o-transform: translateY(-50%);
 }
 
+/* MAIN */
+/* Logos */
+#ms_main-clients{
+    background-color: #F3F5FA;
+}
+.ms_logo-container {
+    text-align: center;
+    height: 150px;
+    line-height:150px;
+}
+
+.ms_logo-container>img{
+    width: 100%;
+    vertical-align:middle;
+}
+
 
 
 
@@ -135,6 +151,13 @@ body {
 
 
 /* Media Quaries */
+@media all and (max-width:  767px) {
+    .ms_logo-container>img {
+        padding: 10px 0;
+    }
+}
+
+
 @media all and (max-width: 991px) {
     .ms_navbar-header {
         width:100%;
