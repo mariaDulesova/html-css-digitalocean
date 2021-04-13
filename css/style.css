@@ -125,6 +125,7 @@ body {
 /* MAIN */
 /* Logos */
 #ms_main-clients{
+    padding: 40px 0;
     background-color: #F3F5FA;
 }
 .ms_logo-container {
@@ -136,6 +137,21 @@ body {
 .ms_logo-container>img{
     width: 100%;
     vertical-align:middle;
+}
+
+
+#ms_main-clients .ms_text-color-brightblu,
+#ms_main-clients .ms_text-color-brightblu .fa-chevron-right{
+    font-size: 80%;
+}
+#ms_main-clients .ms_text-color-brightblu .fa-chevron-right{
+    padding-left: 5px;
+}
+
+
+/* Deployment */
+#ms_deployment {
+    padding:40px 0;
 }
 
 
