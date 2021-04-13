@@ -1,0 +1,16 @@
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+@media all and (max-width: 991px) {
+    .ms_navbar-header {
+        width:100%;
+    }
+    .ms_navbar-header .navbar-toggle{
+        margin-right: 0;
+    }
+    
+}
