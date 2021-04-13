@@ -4,12 +4,38 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
+.ms_text-color-blu {
+    color:#031B4E;
+}
+.ms_text-color-brightblu{
+    color: #0C65FE
+}
+.ms_text-color-navy{
+    color: #4A5D82;
+}
+.ms_text-color-gray {
+    color: #b8cbff;
+}
+.ms_text-color-white {
+    color:white;
+}
+.ms_text-small {
+    font-size: 70%;
+}
+
+
+
 /* NAV */
 
 .ms_navbar {
+    margin-bottom:0;
     background-color: #FFFF;
     border-color: #FFFF;
     color: #031B4E;
+}
+.ms_navbar .navbar-form{
+    padding: 0;
 }
 .ms_navbar-header>.navbar-brand {
     padding: 10px;
@@ -18,14 +44,12 @@ body {
     height: 100%;
     margin-right: 10px;
 }
-
 .ms_navbar .navbar-toggle {
     border: 0;
 }
 .ms_navbar .navbar-toggle .icon-bar{
     background-color: #0C65FE;
 }
-
 .ms_navbar .btn-default {
     color: #0C65FE;
     background-color: transparent;
@@ -36,11 +60,69 @@ body {
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
 }
-
 .ms_navbar .btn-default:hover{
     color: #F3F5FA;
     background-color: #0C65FE;
 }
+
+/* Jambotron */
+#ms_header-jambotron{
+    margin-top: 50px;
+    background-image: url(../img/bg-banner-home.jpg);
+    background-size: cover;
+    padding:40px 0;
+}
+.ms_jambotron-container-white{
+    background-color: white;
+    border-radius: 5px;
+    padding:10px;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.ms_jambotron-container-white>h4{
+    margin-top:0;
+}
+
+.ms_jambotron-container-white button{
+    position:relative;
+}
+.ms_jambotron-container-white .btn-primary{
+    background-color:#5e9dff;
+    border-color:#5e9dff;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.ms_jambotron-container-white .btn-primary:hover{
+    background-color:#3f87fc;
+    border-color:#3f87fc;
+}
+.ms_jambotron-container-white .btn-default{
+    transition: all 0.3s;
+}
+.ms_jambotron-container-white .btn-default:hover{
+    border-color:#e6e6e6;
+}
+
+.ms_jambotron-container-white img{
+    position: absolute;
+    top: 50%;
+    left:2%;
+    transform: translateY(-50%);
+    width: 5%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+
 
 
 
