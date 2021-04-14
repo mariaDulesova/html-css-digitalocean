@@ -292,6 +292,23 @@ a>.fa-chevron-right{
 footer {
     background-color: #031c4e;
 }
+.ms_copyright p{
+    font-size: 90%;
+    margin:0;  
+}
+.ms_copyright img{
+    height:35px;
+    margin-bottom:10px;
+
+}
+.ms_social-links i{
+    display: inline-block;
+    margin:15px 10px 15px 0;
+    color:#b8cbff;
+    font-size: 20px;
+    
+}
+
 footer ul{
     margin-top:10px;
     padding: 0;
