@@ -17,7 +17,8 @@ p {
 #ms_main-clients,
 #ms_deployment,
 #ms_designed-developers,
-#ms_features-needs {
+#ms_features-needs,
+#ms_region-service {
     padding:50px 0;
 }
 #ms_main-clients .ms_text-color-brightblu,
@@ -30,7 +31,6 @@ p {
 #ms_features-needs .ms_text-color-brightblu .fa-chevron-right{
     padding-left: 5px;
 }
-
 
 
 .ms_text-color-brightblu{
@@ -221,6 +221,22 @@ p {
     margin-bottom:20px;
 }
 
+/* Region Services */
+#ms_region-service {
+    background-image: linear-gradient(45deg, #00219c,#0048c5);
+}
+
+#ms_region-service .ms_region-speed-table {
+    margin-top: 20px;
+    
+}
+#ms_region-service .ms_region-speed-table>tbody>tr>td{
+    border-top: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
 
 
 
@@ -243,7 +259,6 @@ p {
         display:none;
     }
 }
-
 
 @media all and (max-width: 991px) {
 
