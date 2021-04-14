@@ -21,7 +21,8 @@ p {
 #ms_features-needs,
 #ms_region-service,
 #ms_dev-team-opinion */
-section {
+section,
+footer {
     padding:50px 0;
 }
 
@@ -285,6 +286,27 @@ a>.fa-chevron-right{
 #ms_get-started button:hover{
     color: white;
     background-color: transparent;
+}
+
+/* Footer */
+footer {
+    background-color: #031c4e;
+}
+footer ul{
+    margin-top:10px;
+    padding: 0;
+}
+footer ul>li{
+    list-style: none;
+}
+footer ul>li>a{
+    color: #b8cbff;
+}
+footer ul>li{
+    padding:2px 0;
+}
+footer ul>li:first-child{
+    font-weight: 700;
 }
 
 
