@@ -3,16 +3,25 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-
-
-.ms_text-color-blu {
+h3,
+h4,
+h5 {
     color:#031B4E;
 }
+p {
+    color: #4A5D82;
+}
+#ms_header-jambotron,
+#ms_main-clients,
+#ms_deployment,
+#ms_designed-developers {
+    padding:40px 0;
+}
+
+
+
 .ms_text-color-brightblu{
     color: #0C65FE
-}
-.ms_text-color-navy{
-    color: #4A5D82;
 }
 .ms_text-color-gray {
     color: #b8cbff;
@@ -33,6 +42,7 @@ body {
     background-color: #FFFF;
     border-color: #FFFF;
     color: #031B4E;
+    font-size: 13px;
 }
 .ms_navbar .navbar-form{
     padding: 0;
@@ -70,7 +80,6 @@ body {
     margin-top: 50px;
     background-image: url(../img/bg-banner-home.jpg);
     background-size: cover;
-    padding:40px 0;
 }
 .ms_jambotron-container-white{
     background-color: white;
@@ -125,7 +134,6 @@ body {
 /* MAIN */
 /* Logos */
 #ms_main-clients{
-    padding: 40px 0;
     background-color: #F3F5FA;
 }
 .ms_logo-container {
@@ -148,13 +156,61 @@ body {
     padding-left: 5px;
 }
 
-
 /* Deployment */
-#ms_deployment {
-    padding:40px 0;
+.ms_deployment-list{
+    list-style:none;
+    margin-top: 30px;
+    padding: 5px 0 5px 15px;
+    border-left: 2px solid #4A5D82;
+    color: #4A5D82;
+}
+.ms_deployment-list li:not(:last-child){
+   margin-bottom: 15px; 
 }
 
+.ms_deployment-container {
+    margin-top: 30px;
+}
 
+/* Designed for developers */
+#ms_designed-developers{
+    background-color: #F3F5FA;
+}
+#ms_designed-developers figure{
+    display:inline-block;
+    width: 100%;
+    margin: 30px 10px;
+    
+}
+
+.ms_slide-whow{
+    position:relative;
+}
+.fa-chevron-left{
+    position: absolute;
+    top:50%;
+    left:17%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #b8cbff;
+}
+.fa-chevron-right{
+    position: absolute;
+    top:50%;
+    right:17%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #031B4E;
+}
+
+.ms_figure-container img{
+    width: 50%;
+}
+.ms_figure-container figcaption{
+    color:#031B4E;
+    font-size: 80%;
+    margin-top:5px;
+}
 
 
 
@@ -168,23 +224,35 @@ body {
 
 /* Media Quaries */
 @media all and (max-width:  767px) {
+
     .ms_logo-container>img {
         padding: 10px 0;
+    }
+    .fa-chevron-right,
+    .fa-chevron-left{
+        display:none;
     }
 }
 
 
 @media all and (max-width: 991px) {
-    .ms_navbar-header {
-        width:100%;
+
+    .ms_navbar-header{
+        float: none;
     }
+    .ms_logo-container>img {
+        line-height:100px;
+    }
+
     .ms_navbar-header .navbar-toggle{
-        margin-right: 0;
-    } 
+        margin-right: 0px;
+    }
+
 }
 
 @media all and (min-width: 1200px) {
-    .ms_navbar .nav {
-        padding-left: 40px;
+
+    .ms_navbar-header>.navbar-brand>img {
+        margin-right: 40px;
     }
 }
