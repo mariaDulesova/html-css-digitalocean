@@ -18,18 +18,21 @@ p {
 #ms_deployment,
 #ms_designed-developers,
 #ms_features-needs,
-#ms_region-service {
+#ms_region-service,
+#ms_dev-team-opinion {
     padding:50px 0;
 }
-#ms_main-clients .ms_text-color-brightblu,
-#ms_main-clients .ms_text-color-brightblu .fa-chevron-right,
-#ms_features-needs .ms_text-color-brightblu,
-#ms_features-needs .ms_text-color-brightblu .fa-chevron-right{
+
+a,
+a>.fa-chevron-right{
     font-size: 90%;
 }
-#ms_main-clients .ms_text-color-brightblu .fa-chevron-right,
-#ms_features-needs .ms_text-color-brightblu .fa-chevron-right{
-    padding-left: 5px;
+
+.fa-chevron-right {
+    padding-left:5px;
+}
+.fa-chevron-left {
+    padding-right: 5px;
 }
 
 
@@ -183,25 +186,26 @@ p {
 #ms_designed-developers figure{
     display:inline-block;
     width: 100%;
-    margin: 30px 10px;
-    
+    margin: 30px 10px; 
 }
 
-.ms_slide-whow{
+.ms_slide-show{
     position:relative;
 }
-#ms_designed-developers .fa-chevron-left{
+#ms_designed-developers .ms_slide-show>.fa-chevron-left,
+#ms_dev-team-opinion .ms_slide-show>.fa-chevron-left  {
     position: absolute;
     top:50%;
-    left:17%;
+    left:20%;
     transform: translateY(-50%);
     font-size: 25px;
     color: #b8cbff;
 }
-#ms_designed-developers .fa-chevron-right{
+#ms_designed-developers .ms_slide-show>.fa-chevron-right,
+#ms_dev-team-opinion .ms_slide-show>.fa-chevron-right {
     position: absolute;
     top:50%;
-    right:17%;
+    right:20%;
     transform: translateY(-50%);
     font-size: 25px;
     color: #031B4E;
@@ -221,7 +225,7 @@ p {
     margin-bottom:20px;
 }
 
-/* Region Services */
+/* Region Service */
 #ms_region-service {
     background-image: linear-gradient(45deg, #00219c,#0048c5);
 }
@@ -233,6 +237,34 @@ p {
 #ms_region-service .ms_region-speed-table>tbody>tr>td{
     border-top: 0;
     border-bottom: 1px solid #ddd;
+    font-size: 80%;
+}
+#ms_region-service .ms_region-speed-table a{
+    color: #00cccf;
+    font-size: 90%
+}
+
+/* Dev Team Opinion */
+#ms_dev-team-opinion {
+    background-color: #F3F5FA;
+}
+#ms_dev-team-opinion h3 {
+    margin-bottom: 50px;
+}
+.ms_opinion-container{
+    display:inline-block;
+    width:50%;
+    margin-bottom: 25px;
+    padding: 40px 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.ms_opinion-container img{
+    width:50%;
+    margin: 20px 0;
+}
+.ms_opinion-container>p:nth-child(3) {
+    margin-bottom: 0;
 }
 
 
@@ -255,8 +287,19 @@ p {
         padding: 10px 0;
     }
     #ms_designed-developers .fa-chevron-right,
-    #ms_designed-developers .fa-chevron-left{
+    #ms_designed-developers .fa-chevron-left,
+    #ms_dev-team-opinion .fa-chevron-left,
+    #ms_dev-team-opinion .fa-chevron-right {
         display:none;
+    }
+    .ms_opinion-container{
+        width:70%;
+        padding: 20px 5px;
+    
+    }
+    .ms_opinion-container img{
+        width:100%;
+        margin: 20px 0;
     }
 }
 
