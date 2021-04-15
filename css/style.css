@@ -14,13 +14,6 @@ p {
     color: #4A5D82;
 }
 
-/* #ms_header-jambotron,
-#ms_main-clients,
-#ms_deployment,
-#ms_designed-developers,
-#ms_features-needs,
-#ms_region-service,
-#ms_dev-team-opinion */
 section,
 footer {
     padding:50px 0;
@@ -30,6 +23,14 @@ footer {
 a,
 a>.fa-chevron-right{
     font-size: 90%;
+}
+#ms_dev-team-opinion .ms_opinion-container a,
+#ms_main-clients .ms_text-color-brightblu{
+    transition: all 0.3s;
+}
+#ms_dev-team-opinion .ms_opinion-container a:hover,
+#ms_main-clients .ms_text-color-brightblu:hover{
+    text-decoration: none;
 }
 
 .fa-chevron-right {
@@ -56,17 +57,14 @@ a>.fa-chevron-right{
 
 
 /* NAV */
-
 .ms_navbar {
     margin-bottom:0;
+    border: 0;
     background-color: #FFFF;
-    border-color: #FFFF;
     color: #031B4E;
     font-size: 13px;
 }
-.ms_navbar .navbar-form{
-    padding: 0;
-}
+
 .ms_navbar-header>.navbar-brand {
     padding: 10px;
 }
@@ -75,10 +73,16 @@ a>.fa-chevron-right{
     margin-right: 10px;
 }
 .ms_navbar .navbar-toggle {
-    border: 0;
+    border: 10px;
 }
 .ms_navbar .navbar-toggle .icon-bar{
     background-color: #0C65FE;
+}
+
+.ms_navbar .navbar-nav>li>a{
+    padding-top:3px;
+    padding-bottom:3px;
+    margin: 10px 0;
 }
 .ms_navbar .btn-default {
     color: #0C65FE;
@@ -152,18 +156,17 @@ a>.fa-chevron-right{
 }
 
 /* MAIN */
-/* Logos */
+/* Client Logos */
 #ms_main-clients{
     background-color: #F3F5FA;
 }
 .ms_logo-container {
     text-align: center;
-    height: 150px;
-    line-height:150px;
+    height: 100px;
+    line-height:100px;
 }
-
 .ms_logo-container>img{
-    width: 100%;
+    max-width: 90%;
     vertical-align:middle;
 }
 
@@ -176,7 +179,7 @@ a>.fa-chevron-right{
     color: #4A5D82;
 }
 .ms_deployment-list li:not(:last-child){
-   margin-bottom: 15px; 
+   margin-bottom: 15px;
 }
 
 .ms_features-container {
@@ -190,9 +193,8 @@ a>.fa-chevron-right{
 #ms_designed-developers figure{
     display:inline-block;
     width: 100%;
-    margin: 30px 10px; 
+    margin: 30px 10px;
 }
-
 .ms_slide-show{
     position:relative;
 }
@@ -214,7 +216,6 @@ a>.fa-chevron-right{
     font-size: 25px;
     color: #031B4E;
 }
-
 .ms_figure-container img{
     width: 50%;
 }
@@ -236,7 +237,6 @@ a>.fa-chevron-right{
 
 #ms_region-service .ms_region-speed-table {
     margin-top: 20px;
-    
 }
 #ms_region-service .ms_region-speed-table>tbody>tr>td{
     border-top: 0;
@@ -274,7 +274,6 @@ a>.fa-chevron-right{
 /* Section Get Started */
 #ms_get-started {
     background-image: linear-gradient(0deg, #00219c,#0048c5);
-
 }
 
 #ms_get-started button{
@@ -294,19 +293,21 @@ footer {
 }
 .ms_copyright p{
     font-size: 90%;
-    margin:0;  
+    margin:0;
 }
 .ms_copyright img{
     height:35px;
     margin-bottom:10px;
-
 }
 .ms_social-links i{
     display: inline-block;
     margin:15px 10px 15px 0;
     color:#b8cbff;
     font-size: 20px;
-    
+    transition: all 0.2s;
+}
+.ms_social-links i:hover{
+    color: white;
 }
 
 footer ul{
@@ -318,6 +319,11 @@ footer ul>li{
 }
 footer ul>li>a{
     color: #b8cbff;
+    transition: all 0.2s;
+}
+footer ul>li>a:hover{
+    color: white;
+    text-decoration: none;
 }
 footer ul>li{
     padding:2px 0;
@@ -327,24 +333,37 @@ footer ul>li:first-child{
 }
 
 
+/* Helper bot */
+.ms_helper-bot {
+    position:fixed;
+    bottom:1%;
+    left: 7%;
+    max-width:70%;
+}
+.ms_helper-bot>img{
+    width: 50px;
+    border-radius: 5px;
+    background-color: #031B4E;
+    margin-bottom: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 
-
-
-
-
-
-
-
-
-
+.ms_helper-bot>p {
+    padding:10px 5px;
+    border-radius: 5px;
+    background-color:white;
+    color: #031B4E;
+    font-size: 10px;
+    border: 1px solid #b8cbff;
+}
 
 
 /* Media Quaries */
 @media all and (max-width:  767px) {
 
-    .ms_logo-container>img {
-        padding: 10px 0;
-    }
     #ms_designed-developers .fa-chevron-right,
     #ms_designed-developers .fa-chevron-left,
     #ms_dev-team-opinion .fa-chevron-left,
@@ -354,32 +373,77 @@ footer ul>li:first-child{
     .ms_opinion-container{
         width:70%;
         padding: 20px 5px;
-    
+
     }
     .ms_opinion-container img{
         width:100%;
         margin: 20px 0;
     }
 }
-
-@media all and (max-width: 991px) {
-
-    .ms_navbar-header{
+@media (max-width: 990px) {
+    .navbar-header {
         float: none;
     }
-    .ms_logo-container>img {
-        line-height:100px;
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-collapse.collapse:not(.in) {
+        display: none!important;
     }
 
-    .ms_navbar-header .navbar-toggle{
-        margin-right: 0px;
+    .ms_helper-bot {
+        position:fixed;
+        bottom:1%;
+        left: 7%;
+        max-width:50%;
     }
-
 }
+
 
 @media all and (min-width: 1200px) {
 
     .ms_navbar-header>.navbar-brand>img {
         margin-right: 40px;
     }
+
+    .ms_helper-bot {
+        position:fixed;
+        bottom:1%;
+        left: 70%;
+        max-width:30%;
+    }
+
+    .ms_helper-bot::after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+    .ms_helper-bot>img{
+        float:right;
+        margin: 10px 0 10px 10px;
+    }
+    .ms_helper-bot>p{
+        float: right;
+        vertical-align: middle;
+        margin-top: 10px;
+    }
+    
 }
